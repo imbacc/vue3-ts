@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    // "target": "es5",
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    // "outDir": "ts-dist",
+    "types": [
+      "webpack-env",
+      "jest"
+    ],
+    "paths": {
+      // "@/*": ["src/*"],
+      // "@assets/*": ["src/assets/*"],
+      // "@common/*": ["src/common/*"],
+      // "@components/*": ["src/components/*"],
+      // "@views/": ["src/views/*"],
+      // "@lib/*": ["src/common/lib/*"],
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
